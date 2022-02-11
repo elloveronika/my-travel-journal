@@ -1,4 +1,6 @@
 import React from "react";
+import images from "./images/12B6B378-1533-426B-9457-5A554C2345CC_1_105_c.jpeg";
+import pin from "./images/Screen Shot 2022-02-11 at 1.57.19 PM.png";
 
 const Content = (props) => {
   console.log("this is content props", props.data);
@@ -11,11 +13,11 @@ const Content = (props) => {
         return (
           //add parent div
           <div className="content--div">
-            <img src={data.imageUrl} />
+            <img src={images} className="content--image" />
             <div className="content--info">
               <div className="content--location">
                 <div className="content--innerlocation">
-                  <span className="redpin"></span>
+                  <img src={pin} className="redpin" />
                   <span>{data.location}</span>
                 </div>
                 <div className="content--link">
